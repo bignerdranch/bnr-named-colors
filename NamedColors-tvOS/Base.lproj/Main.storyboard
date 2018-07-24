@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14306.4" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NamedColors_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-T1-dki">
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBO-zG-KTS">
+                                        <rect key="frame" x="0.0" y="0.0" width="420" height="960"/>
+                                        <color key="backgroundColor" name="Alizarin Crimson"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7X-a4-SJZ">
+                                        <rect key="frame" x="440" y="0.0" width="420" height="960"/>
+                                        <color key="backgroundColor" name="Cadmium Yellow"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncc-F3-KmJ">
+                                        <rect key="frame" x="880" y="0.0" width="420" height="960"/>
+                                        <color key="backgroundColor" name="Phthalo Blue"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMp-YZ-TGd">
+                                        <rect key="frame" x="1320" y="0.0" width="420" height="960"/>
+                                        <color key="backgroundColor" name="Phthalo Green"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RBO-zG-KTS" secondAttribute="bottom" id="98m-HX-2I7"/>
+                                    <constraint firstItem="qMp-YZ-TGd" firstAttribute="top" secondItem="Sel-T1-dki" secondAttribute="top" id="Bru-Bh-GdR"/>
+                                    <constraint firstItem="Ncc-F3-KmJ" firstAttribute="top" secondItem="Sel-T1-dki" secondAttribute="top" id="GKS-5D-89c"/>
+                                    <constraint firstItem="RBO-zG-KTS" firstAttribute="top" secondItem="Sel-T1-dki" secondAttribute="top" id="Iiq-s0-8yT"/>
+                                    <constraint firstItem="g7X-a4-SJZ" firstAttribute="top" secondItem="Sel-T1-dki" secondAttribute="top" id="WYG-G7-M4F"/>
+                                    <constraint firstAttribute="bottom" secondItem="qMp-YZ-TGd" secondAttribute="bottom" id="Zy8-1G-aQL"/>
+                                    <constraint firstAttribute="bottom" secondItem="g7X-a4-SJZ" secondAttribute="bottom" id="b4N-Dq-cnU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ncc-F3-KmJ" secondAttribute="bottom" id="soM-iJ-276"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sel-T1-dki" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="2cH-pl-HVd"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="leading" secondItem="Sel-T1-dki" secondAttribute="leading" id="A5e-ob-mwZ"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="Sel-T1-dki" secondAttribute="bottom" id="X1p-mb-dXM"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="Sel-T1-dki" secondAttribute="trailing" id="nuV-my-2AA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="alizarinCrimsonView" destination="RBO-zG-KTS" id="ufo-Vc-2im"/>
+                        <outlet property="cadmiumYellowView" destination="g7X-a4-SJZ" id="OtC-hH-ynr"/>
+                        <outlet property="phthaloBlueView" destination="Ncc-F3-KmJ" id="k6j-Yn-r33"/>
+                        <outlet property="phthaloGreenView" destination="qMp-YZ-TGd" id="1sq-5G-K7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Alizarin Crimson">
+            <color red="0.8901960784313725" green="0.14901960784313725" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cadmium Yellow">
+            <color red="0.92900002002716064" green="0.52899998426437378" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Phthalo Blue">
+            <color red="0.0" green="0.050980392156862744" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Phthalo Green">
+            <color red="0.070588235294117646" green="0.20784313725490197" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
